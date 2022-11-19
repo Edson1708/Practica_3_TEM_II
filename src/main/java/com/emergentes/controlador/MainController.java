@@ -62,7 +62,6 @@ public class MainController extends HttpServlet {
                 response.sendRedirect("MainController");
             }
             if(op.equals("editar")){
-                System.out.println("hola perros");
                     int id = Integer.parseInt(request.getParameter("id"));
                     String sql = "SELECT * FROM productos WHERE id = ?";
                     ps= conn.prepareStatement(sql);
